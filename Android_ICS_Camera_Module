@@ -1,0 +1,26 @@
+###############################################################################
+#   This document try to present the camera module on Android ICS             #
+###############################################################################
+
+1. Software structure
+  The camera module on Android consist of five parts:
+
+   Application          /packages/apps/Camera
+   camera client        /frameworks/base/libs/camera
+   camera service       /frameworks/base/services/camera/libcameraservice
+   camera HAL           /vendor/marvell/generic/libcamera
+   Linux driver
+
+2. Enable Linux driver
+   Make menuconfig
+     Device Drivers --->
+       <*> Multimedia support --->
+         <*> Video For Linux
+         [*] Enable Video For Linux API 1 (DEPRECATED) (NEW)
+         [*] Video capture adapters (NEW) --->
+           [*] V4L USB devices (NEW) --->
+             <*> USB Video Class (UVC)
+             [*] UVC input events device support (NEW)
+           <*> USB ZC0301[P] webcam support (DEPRECATED)
+
+3

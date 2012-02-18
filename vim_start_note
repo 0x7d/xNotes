@@ -1,0 +1,71 @@
+1.copy cut and paste
+  y copy selected area
+  yy copy current line, just as Y, to buffer
+  Y copy current line
+  nyy copy n lines to buffer
+  dd delete current line
+  p paste content after cursor
+  P paste content before cursor
+  x cut selected area
+  dG delete all
+  VG select all from current to the end of file
+  vgg select all from current to the begining of file
+  Yp copy current line to next line
+
+2.enter visual mode
+  v enter characterwise visual mode
+  V enter linewise visual mode
+  ctrl-V enter block visual mode
+
+3.redo and undo
+  u undo the last operation
+  ctrl-r redo the change
+
+4.jump and move
+  0  move to the beginning of current line
+  gg move to the beginning of current file
+  G  move to the end of current file
+  w  move forward to the beginning of the next word
+  W  move forward to the beginning of the next space-terminated word ignore
+		  punctuation
+  b  move backward to the beginning of the current word, or backward one word if
+          already at start
+  B  move backward to the beginning of the current space-terminated word, ignore
+          punctuation
+  e  move to the end of word, or to next word if already at end
+  E  move to the end of space-terminated word, ignore punctuation
+  ^  jump to start of text on the current line. Far superior to leaning on
+          left-arrow or h key
+  $  jump to the end of current line. Far superior to leaning on right-arrow or
+          k key
+
+  %  move the matching brace, paren , etc, good for code monkeys!
+  }  move to end of paragraph (first empty line)
+  {  move to start of paragragh
+  (  move to start of sentence (separator is both period and space)
+  )  move to start of next sentence (separator is both period and space)
+  "  move to location of your last edit in the current file
+  ]] move to the next function/class (in c/c++/java/python)
+  [[ move to the previous function/class (in c/java/c++/python)
+
+5.save and open
+  :q quit the current window(or editor if you're out of windows) if there is no
+      unsaved changes
+  :q! quit the current window even if there are unsaved changes
+  :qa quit all windows unless there are unsaved changes
+  :qa! quit all windows even if there are unsaved changes
+  :wq save changes and quit current window
+  ZZ save changes and quit current window(as :wq)
+  :e! discard all changes and reload file
+  :e+filename load named file and edit, if file not exsits, create it
+
+6.move by context, not position
+  /+pattern search forward: will prompt for a pattern
+  / repeat last search and show next pattern
+  ? search backward: will prompt for a pattern
+  n repeat the last search (like dot for searches!)
+  N repeat the last search in an opposite direction
+
+7. others
+  :sh change to shell
+  c-d when in shell, return to vim
