@@ -69,3 +69,23 @@
 7. others
   :sh change to shell
   c-d when in shell, return to vim
+
+8. vim modes(see :help vim-mode)
+  1) Normal mode
+  2) Visual mode
+  3) Command mode
+  4) Insert mode
+  5) Select mode
+  6) Ex mode
+
+9. map keys
+  Command Normal Visual Operator Insert Command
+	:map	 y	    y	    y
+	:nmap	 y
+	:vmap		    y
+	:omap			        y
+	:map!				            y      y
+	:imap				            y
+	:cmap					               y
+
+
