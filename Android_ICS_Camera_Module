@@ -23,4 +23,8 @@
              [*] UVC input events device support (NEW)
            <*> USB ZC0301[P] webcam support (DEPRECATED)
 
-3
+3. Add command in init.rc
+   chmod 0777 /dev/video0
+
+4. Disable SensorListener for CameraHal because we dosen't has a accelerate sensor on board.
+

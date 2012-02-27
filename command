@@ -71,7 +71,7 @@ adb install out/target/product/berlin/system/app/MarvellBDP.apk
 
 adb uninstall com.marvell.bdp.application;adb install out/target/product/berlin/system/app/MarvellBDP.apk
 
-sudo smbmount //10.38.116.70/share_sxdong /home/sx/server_70 -o username=sxdong,password=marvell88,uid=sx,gid=sx 0 0;sudo smbmount //10.38.116.71/share_sxdong /home/sx/server_71 -o username=sxdong,password=marvell88,uid=sx,gid=sx 0 0
+sudo smbmount //10.38.116.70/share_sxdong /home/sx/server70 -o username=sxdong,password=marvell88,uid=sx,gid=sx 0 0;sudo smbmount //10.38.116.71/share_sxdong /home/sx/server71 -o username=sxdong,password=marvell88,uid=sx,gid=sx 0 0
 
 modinfo module.ko
 
@@ -201,6 +201,8 @@ repo forall -c "git checkout icssdk_cleanup_0104"
 repo forall -c "git checkout icssdk_1227"
 git checkout icssdk_1231
 
+repo forall -c "git checkout build/berlin/1032"
+
 netcfg eth0 dhcp
 dhcpcd eth0
 
@@ -213,16 +215,45 @@ cp arch/arm/mach-mv88de3100/modules/gpu3D/gal3d.ko /home/sxdong/amos/ics/dev/MRV
 
 cd ../MV88DE3100_SDK/Customization_Data&&cp config.android.a0 config&&cd ../MV88DE3100_Tools/&&make clean&&make u2nandimg
 ---------------------------------------------------
-
+git init
 git config remote.origin.url https://canivs@github.com/canivs/cameraCodes.git
+git push -u origin master
+git remote show [remote-name] 查看某个远程仓库的详细信息
+git重命名文件或者文件夹
+1. git mv filename new-filename
+2. git mv folder new-folder
 
+get repo
+curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+chmod a+x repo
 
+首先保证我们拿到的是最新代码，运行svn update，假设是28版本。
+然后找出要撤销的确切版本：
+svn log contacts.java
+根据log怀疑是27版本改坏的，比较一下：
+svn diff -r 26:27 contacts.java
+发现果真是27版本坏事。
+撤销27版本的改动：
+svn merge -r 27:26 contacts.java
+为了保险起见，再次确认合并的结果：
+svn diff contacts.java
+发现已正确撤销了改动，提交。
+提交改动
+svn commit -m "Revert wrong change from r27"
+提交后版本变成了29。
+如果想在本地check out到某一个版本的代码：
+svn update [filename] -r 200   (回退到200版本)
 
+find . -type d -exec chmod 755 {} \; && find . -type f -exec chmod 644 {} \; && find . -name *.sh -exec chmod +x {} \;
+http://10.38.116.83/trac/Baseline/wiki
 
+http://10.38.116.83/trac/Baseline/wiki
 
+git config color.ui auto --global
+git config core.editor vim --global
 
+proxy 10.83.124.151 1080
 
-
-
+. ./build/envsetup.sh&&lunch berlin_bg2-eng&&chooseproduct berlin_bg2
 
 
