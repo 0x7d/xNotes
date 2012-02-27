@@ -164,6 +164,7 @@ git merge icssdk shgit/icssdk
 
 patch -p1 < new_pe_api.patch
 
+git remote show origin
 git remote update
 git fetch --all
 git fetch shgit --tags

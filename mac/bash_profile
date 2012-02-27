@@ -1,0 +1,22 @@
+alias ls='ls -lG'
+alias ll='ls -l'
+alias la='ls -al'
+alias lh='ls -lh'
+alias c='clear'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+export PS1="\u@\w\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export EDITOR=/usr/bin/vi
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export TOOLS=$HOME/tools
+export ANDROID_SDK=$TOOLS/android-sdk-macosx
+
+PATH=/usr/local/bin:/usr/local/sbin/:$HOME/tools/:$TOOLS/android-ndk-r7:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools/:$PATH
+
+test -r /Users/sx/tools/sw/bin/init.sh && . /Users/sx/tools/sw/bin/init.sh
