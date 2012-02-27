@@ -1,0 +1,18 @@
+Ctrl + Alt + t : Opens the Terminal
+Ctrl + Alt + L : Lock the screen
+Ctrl + Alt + Delete : Logout from the current session
+Ctrl + Alt + Left/Right/Up/Down : To change workspace [e.g hit Ctrl+Alt+Right (Arrow Key) for moving to right workspace]
+Shift + Ctrl + Alt + Left/Right/Up/Down : To move windows to different workspaces [e.g Shift+Ctrl+Alt+Down will move the selected window to down workspace]
+
+Super : focus on Unity Launcher (left panel), with some unique number for each Apps [super key is the one with window logo]
+Super + {n} ; where n = 0 1 2..9 : it will launch the corresponding Application
+Super + t : Opens trash program
+Super + d : toggle between the All Windows Minimize/Restore state
+Super + s : shows you – the all available workspaces, it has the same action as if you click on workspace icon in launcher.
+
+Alt + Tab : Switch Applications
+Alt + F4 : Close the window
+Alt + Space : Activate the window menu
+Alt + F7 : Move Window
+Alt + F8 : Resize Window
+Alt + F2 : Opens the run command dialog

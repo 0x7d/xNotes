@@ -1,0 +1,7 @@
+[user]
+	name = sx
+	email = canivs@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = auto
