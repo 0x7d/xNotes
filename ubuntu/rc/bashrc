@@ -105,7 +105,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 TOOLS=$HOME/dev/tools
-PATH=$TOOLS/jdk1.6.0_27/bin/:$TOOLS/android-sdk-linux_86/platform-tools/:$TOOLS/android-sdk-linux_86/tools/:$TOOLS/repo/:$PATH
-JAVA_HOME=$TOOLS/jdk1.6.0_27/
-CLASSPATH=$TOOLS/jdk1.6.0_27/lib/
+JDK_PATH=$TOOLS/jdk1.6.0_32
+EXE_DIR=$TOOLS/bin/
+ANDROID_SDK=$TOOLS/android-sdk-linux
+ECLIPSE=$TOOLS/eclipse
+PATH=$JDK_PATH/bin/:$ANDROID_SDK/platform-tools/:$ANDROID_SDK/tools/:$TOOLS/repo/:$ECLIPSE/:$EXE_DIR:$PATH
+JAVA_HOME=$JDK_PATH
+CLASSPATH=$JDK_PATH/lib/
 
