@@ -61,7 +61,7 @@ lunch berlin-eng
 
 #gingerbread
 . ./build/envsetup.sh
-chooseproduct berlin_bg2 
+chooseproduct berlin_bg2
 
 mmm ./vendor/marvell-confidential/berlin/services/BDPService/ -B
 mmm ./vendor/marvell-confidential/berlin/apps/BDP_Android/ -B
@@ -106,11 +106,11 @@ $>git push shgit :refs/tags/tag1
 4. diff tags
 $>git diff tag1 tag2
 #################################################
-sudo apt-get remove abiword abiword-common abiword-plugin-grammar abiword-plugin-mathview ace-of-penguins audacious audacious-plugins chromium-browser chromium-browser-inspector chromium-browser-l10n chromium-codecs-ffmpeg elementary-icon-theme esound-common galculator gdebi gdebi-core gecko-mediaplayer giblib1 gnome-mplayer gnome-time-admin gnumeric gnumeric-common gnumeric-doc gpicview guvcview hardinfo leafpad libabiword-2.8 libaiksaurus-1.2-0c2a libaiksaurus-1.2-data libaiksaurusgtk-1.2-0c2a libasyncns0 libaudclient2 libaudcore1 libaudio2 libaudiofile0 libavcodec52 libavformat52 libavutil50 libbinio1ldbl libbluray0 libcddb2 libcompfaceg1 libcue1 libdca0 libdirectfb-1.2-9 libdiscid0 libdvdnav4 libdvdread4 libenca0 libesd0 libexo-1-0 libexo-common libfaad2 libfluidsynth1 libfm-gtk0 libfm0 libgdome2-0 libgdome2-cpp-smart0c2a libgif4 libgoffice-0.8-8 libgoffice-0.8-8-common libgringotts2 libgsf-1-114 libgsf-1-common libgsm1 libgtkmathview0c2a libid3tag0 libimlib2 libjpeg-progs libjpeg8 liblash3 liblink-grammar4 libloudmouth1-0 liblzo2-2 libmcrypt4 libmcs1 libmenu-cache1 libmhash2 libmms0 libmowgli2 libmp3lame0 libmusicbrainz3-6 libobparser21 libobrender21 libonig2 libopenal1 libopts25 libots0 libpisock9 libpostproc51 libresid-builder0c2a libschroedinger-1.0-0 libsexy2 libsidplay2 libsvga1 libswscale0 libtar libts-0.0-0 libuniconf4.6 libva1 libvdpau1 libvpx0 libwebcam0 libwv-1.2-3 libwvstreams4.6-base libwvstreams4.6-extras libx264-106 libxfce4util-bin libxfce4util-common libxfce4util4 libxfcegui4-4 libxvidcore4 link-grammar-dictionaries-en lm-sensors lubuntu-artwork lubuntu-core lubuntu-default-settings lubuntu-desktop lubuntu-icon-theme lxappearance lxappearance-obconf lxde-common lxde-core lxdm lxinput lxkeymap lxlauncher lxmenu-data lxpanel lxpanel-indicator-applet-plugin lxrandr lxsession lxsession-edit lxshortcut lxtask lxterminal mplayer mtpaint ntp obconf openbox openbox-themes osmo pcmanfm pidgin pidgin-data pidgin-libnotify plymouth-theme-lubuntu-logo plymouth-theme-lubuntu-text python-xklavier scrot sylpheed sylpheed-doc sylpheed-i18n sylpheed-plugins transmission tsconf ttf-lyx uvcdynctrl uvcdynctrl-data wvdial xchat xchat-common xfburn xfce-keyboard-shortcuts xfonts-100dpi xpad xscreensaver && sudo apt-get install ubuntu-desktop 
- 
+sudo apt-get remove abiword abiword-common abiword-plugin-grammar abiword-plugin-mathview ace-of-penguins audacious audacious-plugins chromium-browser chromium-browser-inspector chromium-browser-l10n chromium-codecs-ffmpeg elementary-icon-theme esound-common galculator gdebi gdebi-core gecko-mediaplayer giblib1 gnome-mplayer gnome-time-admin gnumeric gnumeric-common gnumeric-doc gpicview guvcview hardinfo leafpad libabiword-2.8 libaiksaurus-1.2-0c2a libaiksaurus-1.2-data libaiksaurusgtk-1.2-0c2a libasyncns0 libaudclient2 libaudcore1 libaudio2 libaudiofile0 libavcodec52 libavformat52 libavutil50 libbinio1ldbl libbluray0 libcddb2 libcompfaceg1 libcue1 libdca0 libdirectfb-1.2-9 libdiscid0 libdvdnav4 libdvdread4 libenca0 libesd0 libexo-1-0 libexo-common libfaad2 libfluidsynth1 libfm-gtk0 libfm0 libgdome2-0 libgdome2-cpp-smart0c2a libgif4 libgoffice-0.8-8 libgoffice-0.8-8-common libgringotts2 libgsf-1-114 libgsf-1-common libgsm1 libgtkmathview0c2a libid3tag0 libimlib2 libjpeg-progs libjpeg8 liblash3 liblink-grammar4 libloudmouth1-0 liblzo2-2 libmcrypt4 libmcs1 libmenu-cache1 libmhash2 libmms0 libmowgli2 libmp3lame0 libmusicbrainz3-6 libobparser21 libobrender21 libonig2 libopenal1 libopts25 libots0 libpisock9 libpostproc51 libresid-builder0c2a libschroedinger-1.0-0 libsexy2 libsidplay2 libsvga1 libswscale0 libtar libts-0.0-0 libuniconf4.6 libva1 libvdpau1 libvpx0 libwebcam0 libwv-1.2-3 libwvstreams4.6-base libwvstreams4.6-extras libx264-106 libxfce4util-bin libxfce4util-common libxfce4util4 libxfcegui4-4 libxvidcore4 link-grammar-dictionaries-en lm-sensors lubuntu-artwork lubuntu-core lubuntu-default-settings lubuntu-desktop lubuntu-icon-theme lxappearance lxappearance-obconf lxde-common lxde-core lxdm lxinput lxkeymap lxlauncher lxmenu-data lxpanel lxpanel-indicator-applet-plugin lxrandr lxsession lxsession-edit lxshortcut lxtask lxterminal mplayer mtpaint ntp obconf openbox openbox-themes osmo pcmanfm pidgin pidgin-data pidgin-libnotify plymouth-theme-lubuntu-logo plymouth-theme-lubuntu-text python-xklavier scrot sylpheed sylpheed-doc sylpheed-i18n sylpheed-plugins transmission tsconf ttf-lyx uvcdynctrl uvcdynctrl-data wvdial xchat xchat-common xfburn xfce-keyboard-shortcuts xfonts-100dpi xpad xscreensaver && sudo apt-get install ubuntu-desktop
+
 sudo /etc/init.d/gdm stop
 sudo dpkg-reconfigure xserver-xorg
-sudo /etc/init.d/gdm start 
+sudo /etc/init.d/gdm start
 
 find . -name ".svn" -exec rm -rf {} \;
 find . -name ".c" -exec rm -rf {} \;
@@ -118,7 +118,7 @@ find . -name ".c" -exec rm -rf {} \;
 解压：tar   jxvf   FileName.tar.bz2
 压缩：tar   jcvf   FileName.tar.bz2
 
-tar -xzf all.tar.gz 
+tar -xzf all.tar.gz
 
 
 setenv bootfile uImage
@@ -257,4 +257,99 @@ proxy 10.83.124.151 1080
 
 . ./build/envsetup.sh&&lunch berlin_bg2-eng&&chooseproduct berlin_bg2
 
+ThumbnailUtils  video and picture preview
+
+使用Application或者是Bundle来进行数据传递
+
+
+WVGA854: 854*480
+WVGA800: 800*480
+HVGA: 640*480
+QVGA: 320*240
+WQVGA432：432*240
+WQVGA400：400*240
+
+api "https://122.226.111.68:9080/"
+file/sync "https://122.226.111.68:9082/"
+event "https://122.226.111.68:9081/"
+
+Toast.makeText(getApplicationContext(), "hello!",Toast.LENGTH_SHORT).show();
+RandomAccessFile
+
+https://yunio.codebasehq.com
+Message message = Message.obtain();
+
+%s/^M//g
+
+sed -i "s#sp#preferences#g" `grep "sp" -rwl ./`
+
+cd ~/dev/tools/android-sdk-linux/platform-tools && sudo ./adb kill-server && sudo ./adb start-server
+
+apktool d Pulse_News_2.8.5-libapk.com.apk  pulse/
+
+if (android.os.Build.VERSION.SDK_INT > 9)
+
+tcpdump -p -vv -s 0 -w /sdcard/capture.pcap
+wireshark
+
+https://122.226.111.68:9081/events?types=file_delete,file_create_folder,file_copy,file_upload,file_move
+
+dd if=/dev/urandom of=ppp bs=43520 count=14
+
+du -sh dirname
+
+1、在Android项目根目录下新建一个libs文件夹；
+2、把你需要的导入的第三方Jar包复制进这个目录；
+3、在libs目录上点右键，选Bulid path  –> Use as source folder
+
+LocalBroadcastManager
+
+ThumbnailUtils  video and picture preview
+
+使用Application或者是Bundle来进行数据传递
+
+WVGA854: 854*480
+WVGA800: 800*480
+HVGA: 640*480
+QVGA: 320*240
+WQVGA432：432*240
+WQVGA400：400*240
+
+Toast.makeText(getApplicationContext(), "hello!",Toast.LENGTH_SHORT).show();
+RandomAccessFile
+
+Message message = Message.obtain();
+
+sed -i "s#YUNIO.doUnregisterReceiver#YBroadcastManager.doUnregisterReceiver#g" `grep "YUNIO.doUnregisterReceiver" -rwl ./`
+
+cd ~/dev/tools/android-sdk-linux/platform-tools && sudo ./adb kill-server && sudo ./adb start-server && cd
+
+apktool d Pulse_News_2.8.5-libapk.com.apk  pulse/
+sh dex2jar.sh classes.dex
+jd-gui classes_dex2jar.jar
+
+if (android.os.Build.VERSION.SDK_INT > 9)
+
+find view -type f -exec cat {} \;| wc -l
+
+tcpdump -p -vv -s 0 -w /sdcard/capture.pcap
+wireshark
+
+setprop net.dns1 ipaddress
+
+dd if=/dev/urandom of=dudo bs=43520 count=45
+
+du -sh dirname
+
+1、在Android项目根目录下新建一个libs文件夹；
+2、把你需要的导入的第三方Jar包复制进这个目录；
+3、在libs目录上点右键，选Bulid path  –> Use as source folder
+
+Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.yunio/.ui.WelcomeActivity }
+
+javap -s com.yunio.lansync.LanSyncHelper -classpath .
+
+netstat -an
+
+~/dev/tools/android-ndk-r8/ndk-build clean && ~/dev/tools/android-ndk-r8/ndk-build
 

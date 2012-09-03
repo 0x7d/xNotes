@@ -6,5 +6,8 @@ sudo apt-get update;
 echo "install build-essential"
 sudo apt-get install build-essential
 
+echo "install cscope and ctags"
+sudo apt-get install  cscope
+
 echo "install some useful packages"
 sudo apt-get install vim git git-core minicom stardict ctags cscope ia32-libs gtkterm smbfs libtool
