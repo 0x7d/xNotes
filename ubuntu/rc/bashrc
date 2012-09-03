@@ -113,3 +113,4 @@ PATH=$JDK_DIR/bin/:$ANDROID_SDK/platform-tools/:$ANDROID_SDK/tools/:$TOOLS/repo/
 JAVA_HOME=$JDK_DIR
 CLASSPATH=$JDK_DIR/lib/
 
+alias eclipse='eclipse &'
