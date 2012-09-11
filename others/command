@@ -285,7 +285,12 @@ RandomAccessFile
 https://yunio.codebasehq.com
 Message message = Message.obtain();
 
-%s/^M//g
+convert ^M from windows format to unix format.
+1) cat windowsFile | tr -d "\r" "\n" > unixFile;
+2) sed -e "s/^M//" windowsFile > unixFile;
+3) in vim, use command ":%s/^M//g";
+4) dos2unix command;
+(use ctrl-v and ctrl-m to input "^M" not just input paste or input it).
 
 sed -i "s#sp#preferences#g" `grep "sp" -rwl ./`
 
