@@ -47,6 +47,8 @@
   "  move to location of your last edit in the current file
   ]] move to the next function/class (in c/c++/java/python)
   [[ move to the previous function/class (in c/java/c++/python)
+  ctrl+b scroll page backward
+  ctrl+f scroll page forward
 
 5.save and open
   :q quit the current window(or editor if you're out of windows) if there is no
