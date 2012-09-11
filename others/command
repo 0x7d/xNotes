@@ -48,8 +48,14 @@ repo forall -c 'git checkout build/berlin/1013'
 repo forall -c 'git branch b1013'
 repo forall -c 'git branch doctor'
 
-git branch -D master //force delete branch
-git branch -m master_0 master //rename branch name
+git branch -d branch_name (remove local branch)
+git push origin :branch_name (remove remote branch)
+git remote update (fetch from all remotes)
+git remote prune origin (remove any old, conflicting branches)
+
+
+git branch -D master (force delete branch)
+git branch -m master_0 master (rename branch name)
 
 /etc/samba/smb.conf
 
