@@ -90,4 +90,6 @@
 	:imap				            y
 	:cmap					               y
 
-
+10. extras
+  ,be open buffer explorer
+  ,zz max current window or resume window size.
