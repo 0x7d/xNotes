@@ -1,0 +1,15 @@
+1.	sudo apt-get install tftp tftpd netkit-inetd
+2.	make you own tftp server directory as $TFTP_DIR
+3.	modify the “/etc/inetd.conf” tftp settings as:
+    "tftp dgram udp wait nobody /usr/sbin/tcpd /usr/sbin/in.tftpd $TFTP_DIR"
+4.	reload the tftp server settings
+    sudo /etc/init.d/inetd reload
+
+
+
+1.	sudo apt-get install tftp tftpd openbsd-inetd
+2.	make you own tftp server directory as $TFTP_DIR
+3.	modify the “/etc/inetd.conf” tftp settings as:
+    "tftp dgram udp wait nobody /usr/sbin/tcpd /usr/sbin/in.tftpd $TFTP_DIR"
+4.	reload the tftp server settings
+    /etc/init.d/openbsd-inetd restart
