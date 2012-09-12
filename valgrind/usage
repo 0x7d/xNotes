@@ -1,0 +1,3 @@
+valgrind --tool=tool_name  program_name
+
+valgrind --tool=memcheck --leak-check=full ./Yunio

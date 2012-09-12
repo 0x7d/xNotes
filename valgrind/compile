@@ -1,0 +1,6 @@
+1. Download package from valgrind website:http://valgrind.org/downloads/current.html#current;
+2. Extract package: tar -xjvf valgrind-3.8.0.tar.bz2;
+3. Configure valgrind: ./configure --prefix=/usr/local/valgrind;
+4. Make "make";
+5: Install "make install";
+6: Add valgrind to path.
