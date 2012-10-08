@@ -1,0 +1,11 @@
+1. autoscan
+2. mv configure.scan configure.in
+3: modify configure.in (add AM_INIT_AUTOMAKE(filename, 1.0))
+4: aclocal
+5: write Makefile.am
+6: autoheader
+7: automake --add-missing
+8: autoconf
+9: ./configure
+10: make
+11: make install

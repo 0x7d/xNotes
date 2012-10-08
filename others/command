@@ -13,6 +13,8 @@ repo forall -c "git clean -d -f"
 repo forall -c "git format-patch gb1.4.3"
 repo forall -c "git reset --hard"&&repo forall -c "git clean -df"&& repo sync;
 
+git reset HEAD <file>
+
 mount -o remount,rw /dev/mtdblock5 /
 mount -o rw,remount /system
 mount -o remount,rw /system
@@ -56,6 +58,8 @@ git remote prune origin (remove any old, conflicting branches)
 
 git branch -D master (force delete branch)
 git branch -m master_0 master (rename branch name)
+
+git status -uno (-uall -unormal) don't show untracked files
 
 /etc/samba/smb.conf
 
@@ -198,6 +202,9 @@ sed -i "s#videodev2#videodev#g" `grep "videodev2" -rl ./`
 
 find -name *.la | xargs rm -rf
 find -name .git | xargs rm -rf
+
+file * | cut -d ":" -f1 | xargs wc -l
+ls `pwd` | awk -F " " '{print $5}'
 
 git fetch [remote-name] //update all remote data not updated in local repository
 
