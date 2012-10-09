@@ -1,0 +1,12 @@
+HOW TO MODIFY ANDROID BUILD NUMBER
+
+In Android build system, the build number showed in settings is determined by parameter BUILD_DISPLAY_ID.
+BUILD_DISPLAY_ID is defined in file icssdk/build/core/Makefile like: "BUILD_DISPLAY_ID :=  $(TARGET_PRODUCT)-$(TARGET_BUILD_VARIANT) $(PLATFORM_VERSION) $(BUILD_ID) $(BUILD_NUMBER) $(BUILD_VERSION_TAGS)", it's components are as following:
+    TARGET_PRODUCT is determined by command "lunch berlin_bg2-eng" when compile system.
+    TARGET_BUILD_VARIANT is determined by system release type, it can be "user","userdebug","eng"
+    PLATFORM_VERSION is defined in icssdk/build/core/version_defaults.mk
+    BUILD_ID is defined in file icssdk/build/core/build_id.mk
+    BUILD_NUMBER is defined in file icssdk/build/core/version_defaults.mk
+    BUILD_VERSION_TAGS is defined in file icssdk/build/core/Makefile, which is determined by which type of product.
+If you want to append other string to the build number, you can append it directly to BUILD_DISPLAY_ID as:
+    BUILD_DISPLAY_ID += WHAT_YOU_WANT_TO_APPEND in file icssdk/build/core/Makefile
